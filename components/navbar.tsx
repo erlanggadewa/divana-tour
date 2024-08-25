@@ -1,14 +1,13 @@
 "use client";
 
-import { Fragment } from "react";
-import { Menu, Transition, Disclosure } from "@headlessui/react";
 import Container from "@/components/container";
-import Link from "next/link";
-import Image from "next/image";
 import { urlForImage } from "@/lib/sanity/image";
-import cx from "clsx";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { myLoader } from "@/utils/all";
+import cx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment } from "react";
 
 export default function Navbar(props) {
   const leftmenu = [
@@ -86,7 +85,7 @@ export default function Navbar(props) {
                       />
                     ) : (
                       <span className="block text-center">
-                        Stablo
+                        Divana Tour
                       </span>
                     )}
                   </Link>
